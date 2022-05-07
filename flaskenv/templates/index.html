@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Page</title>
+</head>
+<body>
+    <h2>Welcome to Mobile phone prediction</h2>
+    <form action="/predict" method="post">
+        Enter RAM<input type="text" name="ram" required="required"><br></br>
+        Enter ROM<input type="text" name="rom" required="required"><br></br>
+        Enter Mobile Size<input type="text" name="size" required="required"><br></br>
+        Enter Primary camera<input type="text" name="back" required="required"><br></br>
+        Enter Selfie camera<input type="text" name="front" required="required"><br></br>
+        Enter Battery Power<input type="text" name="battery" required="required"><br></br>
+        <button type="submit">Predict</button>
+        <button type="submit">Reset</button>
+    </form>
+    <h1>{{ sent_value }}</h1>
+</body>
+</html>
